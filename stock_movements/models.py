@@ -11,6 +11,7 @@ class StockMovementIn(models.Model):
 
     class Meta:
         ordering = ["-created_at"]
+        db_table = "stock_movements_in"
 
     def __str__(self):
         return f'{self.product}'
@@ -25,6 +26,7 @@ class StockMovementOut(models.Model):
 
     class Meta:
         ordering = ["-created_at"]
+        db_table = "stock_movements_out"
 
     def __str__(self):
         return f'{self.product}'

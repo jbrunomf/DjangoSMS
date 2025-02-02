@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17102f50-a469-440a-9fa2-b6348367914c" name="Changes" comment="Add &quot;categories&quot; and &quot;suppliers&quot; apps with models and setup&#10;&#10;Introduced two new Django apps, &quot;categories&quot; and &quot;suppliers&quot;, each with a respective model, migrations, and basic app structure including admin, views, and tests placeholders. Updated settings to include the new apps, ensuring proper integration.">
+    <list default="true" id="17102f50-a469-440a-9fa2-b6348367914c" name="Changes" comment="Add &quot;products&quot; and &quot;stock_movements&quot; apps with models and setup&#10;&#10;Introduced two new Django apps, &quot;products&quot; and &quot;stock_movements&quot;, each with their respective models and initial migrations. &quot;products&quot; includes a Product model linked to brands and categories, while &quot;stock_movements&quot; manages stock inflows and outflows tied to products and suppliers. Both apps were registered in settings and include basic app scaffolding for future development.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoSMS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoSMS/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_movements/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock_movements/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,7 @@
       <updated>1738452049760</updated>
       <workItem from="1738452050486" duration="184000" />
       <workItem from="1738452252322" duration="698000" />
-      <workItem from="1738452957057" duration="2895000" />
+      <workItem from="1738452957057" duration="3018000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial Django project setup&#10;&#10;This commit initializes a new Django project named &quot;DjangoSMS&quot; with default configurations, a core app, and PostgreSQL as the database backend. It also includes IDE settings, dependencies in `requirements.txt`, and basic project structure files like `manage.py`, `settings.py`, `urls.py`, and WSGI/ASGI configuration files.">
       <option name="closed" value="true" />
@@ -135,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738468419319</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add &quot;products&quot; and &quot;stock_movements&quot; apps with models and setup&#10;&#10;Introduced two new Django apps, &quot;products&quot; and &quot;stock_movements&quot;, each with their respective models and initial migrations. &quot;products&quot; includes a Product model linked to brands and categories, while &quot;stock_movements&quot; manages stock inflows and outflows tied to products and suppliers. Both apps were registered in settings and include basic app scaffolding for future development.">
+      <option name="closed" value="true" />
+      <created>1738469578435</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738469578435</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +153,7 @@
     <MESSAGE value="Add initial Django project setup&#10;&#10;This commit initializes a new Django project named &quot;DjangoSMS&quot; with default configurations, a core app, and PostgreSQL as the database backend. It also includes IDE settings, dependencies in `requirements.txt`, and basic project structure files like `manage.py`, `settings.py`, `urls.py`, and WSGI/" />
     <MESSAGE value="Add &quot;brands&quot; app with Brand model and initial setup&#10;&#10;This commit introduces a new Django app named &quot;brands&quot;. It includes the Brand model, migrations, admin registration, and integration with settings. Additionally, basic placeholder files for tests, views, and other app components were added." />
     <MESSAGE value="Add &quot;categories&quot; and &quot;suppliers&quot; apps with models and setup&#10;&#10;Introduced two new Django apps, &quot;categories&quot; and &quot;suppliers&quot;, each with a respective model, migrations, and basic app structure including admin, views, and tests placeholders. Updated settings to include the new apps, ensuring proper integration." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;categories&quot; and &quot;suppliers&quot; apps with models and setup&#10;&#10;Introduced two new Django apps, &quot;categories&quot; and &quot;suppliers&quot;, each with a respective model, migrations, and basic app structure including admin, views, and tests placeholders. Updated settings to include the new apps, ensuring proper integration." />
+    <MESSAGE value="Add &quot;products&quot; and &quot;stock_movements&quot; apps with models and setup&#10;&#10;Introduced two new Django apps, &quot;products&quot; and &quot;stock_movements&quot;, each with their respective models and initial migrations. &quot;products&quot; includes a Product model linked to brands and categories, while &quot;stock_movements&quot; manages stock inflows and outflows tied to products and suppliers. Both apps were registered in settings and include basic app scaffolding for future development." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;products&quot; and &quot;stock_movements&quot; apps with models and setup&#10;&#10;Introduced two new Django apps, &quot;products&quot; and &quot;stock_movements&quot;, each with their respective models and initial migrations. &quot;products&quot; includes a Product model linked to brands and categories, while &quot;stock_movements&quot; manages stock inflows and outflows tied to products and suppliers. Both apps were registered in settings and include basic app scaffolding for future development." />
   </component>
 </project>
