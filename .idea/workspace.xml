@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17102f50-a469-440a-9fa2-b6348367914c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DjangoSMS.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="17102f50-a469-440a-9fa2-b6348367914c" name="Changes" comment="Add initial Django project setup&#10;&#10;This commit initializes a new Django project named &quot;DjangoSMS&quot; with default configurations, a core app, and PostgreSQL as the database backend. It also includes IDE settings, dependencies in `requirements.txt`, and basic project structure files like `manage.py`, `settings.py`, `urls.py`, and WSGI/">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DjangoSMS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DjangoSMS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoSMS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoSMS/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jbrunomf"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jbrunomf/DjangoStockManagementSystem.git",
+    "accountId": "2b7cba04-4a97-4e1f-bbb7-a8ce74e796a9"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -33,6 +44,7 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/jbrun/PycharmProjects/DjangoSMS",
@@ -99,10 +111,24 @@
       <updated>1738452049760</updated>
       <workItem from="1738452050486" duration="184000" />
       <workItem from="1738452252322" duration="698000" />
+      <workItem from="1738452957057" duration="1468000" />
     </task>
+    <task id="LOCAL-00001" summary="Add initial Django project setup&#10;&#10;This commit initializes a new Django project named &quot;DjangoSMS&quot; with default configurations, a core app, and PostgreSQL as the database backend. It also includes IDE settings, dependencies in `requirements.txt`, and basic project structure files like `manage.py`, `settings.py`, `urls.py`, and WSGI/ASGI configuration files.">
+      <option name="closed" value="true" />
+      <created>1738453388400</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738453388400</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add initial Django project setup&#10;&#10;This commit initializes a new Django project named &quot;DjangoSMS&quot; with default configurations, a core app, and PostgreSQL as the database backend. It also includes IDE settings, dependencies in `requirements.txt`, and basic project structure files like `manage.py`, `settings.py`, `urls.py`, and WSGI/" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add initial Django project setup&#10;&#10;This commit initializes a new Django project named &quot;DjangoSMS&quot; with default configurations, a core app, and PostgreSQL as the database backend. It also includes IDE settings, dependencies in `requirements.txt`, and basic project structure files like `manage.py`, `settings.py`, `urls.py`, and WSGI/" />
   </component>
 </project>
