@@ -4,19 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17102f50-a469-440a-9fa2-b6348367914c" name="Changes" comment="Add templates for base layout with header, sidebar, and footer&#10;&#10;Introduced a base HTML structure with reusable components: header, sidebar, and footer. This setup ensures a consistent UI layout using Bootstrap and prepares the project for dynamic content rendering via Django.">
-      <change beforePath="$PROJECT_DIR$/.idea/DjangoSMS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DjangoSMS.iml" afterDir="false" />
+    <list default="true" id="17102f50-a469-440a-9fa2-b6348367914c" name="Changes" comment="Rename Brand model field, add utils, and update templates.&#10;&#10;Renamed the `name` field to">
+      <change afterPath="$PROJECT_DIR$/brands/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brands/templates/brand_create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brands/templates/brand_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brands/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/brands/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/_footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoSMS/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoSMS/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brands/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/brands/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brands/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/brands/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brands/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/brands/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/components/_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/_sidebar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +41,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/jbrunomf/DjangoStockManagementSystem.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/jbrunomf/DjangoSMS.git&quot;,
     &quot;accountId&quot;: &quot;2b7cba04-4a97-4e1f-bbb7-a8ce74e796a9&quot;
   }
 }</component>
@@ -42,36 +54,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Django Server.DjangoSMS.executor": "Debug",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/jbrun/PycharmProjects/DjangoSMS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Django Server.DjangoSMS.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jbrun/PycharmProjects/DjangoSMS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jbrun\PycharmProjects\DjangoSMS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jbrun\PycharmProjects\DjangoSMS\brands\templates" />
       <recent name="C:\Users\jbrun\PycharmProjects\DjangoSMS\templates" />
     </key>
   </component>
@@ -121,7 +134,8 @@
       <workItem from="1738452050486" duration="184000" />
       <workItem from="1738452252322" duration="698000" />
       <workItem from="1738452957057" duration="4000000" />
-      <workItem from="1738537033617" duration="3431000" />
+      <workItem from="1738537033617" duration="4041000" />
+      <workItem from="1738629569482" duration="3447000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial Django project setup&#10;&#10;This commit initializes a new Django project named &quot;DjangoSMS&quot; with default configurations, a core app, and PostgreSQL as the database backend. It also includes IDE settings, dependencies in `requirements.txt`, and basic project structure files like `manage.py`, `settings.py`, `urls.py`, and WSGI/ASGI configuration files.">
       <option name="closed" value="true" />
@@ -171,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738470645263</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Rename Brand model field, add utils, and update templates.&#10;&#10;Renamed the `name` field to `brand_name` in the `Brand` model for clarity and consistency. Added a new utility method, `get_description_summary`, for truncated brand descriptions. Updated HTML templates for a more modular structure with Bootstrap components and fixed formatting issues.">
+      <option name="closed" value="true" />
+      <created>1738543712569</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738543712569</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +206,7 @@
     <MESSAGE value="Add &quot;products&quot; and &quot;stock_movements&quot; apps with models and setup&#10;&#10;Introduced two new Django apps, &quot;products&quot; and &quot;stock_movements&quot;, each with their respective models and initial migrations. &quot;products&quot; includes a Product model linked to brands and categories, while &quot;stock_movements&quot; manages stock inflows and outflows tied to products and suppliers. Both apps were registered in settings and include basic app scaffolding for future development." />
     <MESSAGE value="Update database table names for stock movement models&#10;&#10;Renamed database tables for `StockMovementIn` and `StockMovementOut` models to align with clearer naming conventions (`stock_movements_in` and `stock_movements_out`). Includes corresponding migration file updates for schema changes." />
     <MESSAGE value="Add templates for base layout with header, sidebar, and footer&#10;&#10;Introduced a base HTML structure with reusable components: header, sidebar, and footer. This setup ensures a consistent UI layout using Bootstrap and prepares the project for dynamic content rendering via Django." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add templates for base layout with header, sidebar, and footer&#10;&#10;Introduced a base HTML structure with reusable components: header, sidebar, and footer. This setup ensures a consistent UI layout using Bootstrap and prepares the project for dynamic content rendering via Django." />
+    <MESSAGE value="Rename Brand model field, add utils, and update templates.&#10;&#10;Renamed the `name` field to" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename Brand model field, add utils, and update templates.&#10;&#10;Renamed the `name` field to" />
   </component>
 </project>
