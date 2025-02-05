@@ -30,6 +30,7 @@
                 <th>Id</th>
                 <th>Nome</th>
                 <th>Descrição</th>
+                <th>Ações</th>
             </tr>
             </thead>
             <tbody>
@@ -37,7 +38,11 @@
                 <tr>
                     <td>{{ brand.id }}</td>
                     <td>{{ brand.brand_name }}</td>
-                    <td>{{ brand.description }}
+                    <td>{{ brand.description }}</td>
+                    <td>
+                        <a href="{% url 'brand_detail' brand.id %}" class="btn btn-info"><i class="bi-eye"></i></a>
+                        <a href="{% url 'brand_update' brand.id %}" class="btn btn-secondary"><i
+                                class="bi bi-arrow-clockwise"></i></a>
                     </td>
                 </tr>
             {% endfor %}

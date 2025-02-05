@@ -25,11 +25,13 @@ class BrandCreateView(CreateView):
     form_class = BrandForm
     success_url = reverse_lazy('brand_list')
 
+
 class BrandUpdateView(UpdateView):
     model = Brand
     template_name = 'brand_update.html'
     form_class = BrandForm
     success_url = reverse_lazy('brand_list')
+
 
 class BrandDetailView(DetailView):
     model = Brand
