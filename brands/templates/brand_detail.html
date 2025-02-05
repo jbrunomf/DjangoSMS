@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %} Detalhes da marca {{ brand.name }} {% endblock %}
+
+{% block content %}
+    <section class="brand-details">
+        <h2 class="display-6">Detalhes da Marca: {{ brand.brand_name }}</h2>
+        <p><strong>Nome:</strong> {{ brand.brand_name }}</p>
+        <p><strong>Descrição:</strong> {{ brand.description }}</p>
+        {#        <div class="products">#}
+        {#            <h3>Products</h3>#}
+        {#            <ul>#}
+        {#                {% for product in brand.products %}#}
+        {#                    <li>{{ product.name }} - {{ product.category }} - ${{ product.price }}</li>#}
+        {#                {% empty %}#}
+        {#                    <p>No products available for this brand.</p>#}
+        {#                {% endfor %}#}
+        {#            </ul>#}
+        {#        </div>#}
+    </section>
+    <a href="{% url 'brand_list' %}" class="btn btn-primary">Voltar para listagem de marcas</a>
+{% endblock %}

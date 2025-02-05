@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17102f50-a469-440a-9fa2-b6348367914c" name="Changes" comment="Rename Brand model field and add CRUD views and templates.&#10;&#10;Renamed the `name` field to `brand_name` in the Brand model for clarity and adjusted its ordering. Introduced ListView and CreateView for the Brand model with corresponding templates (`brand_list.html` and `brand_create.html`) to enable basic CRUD functionality. Updated URLs, admin configuration, and sidebar navigation to integrate the new changes.">
+    <list default="true" id="17102f50-a469-440a-9fa2-b6348367914c" name="Changes" comment="Add CRUD views and templates for Brand model&#10;&#10;Renamed the `name` field to `brand_name` in the Brand model for clarity and updated its ordering. Implemented ListView and CreateView with corresponding templates to enable basic CRUD functionality. Enhanced forms, updated URLs, and adjusted sidebar navigation for seamless integration.">
+      <change afterPath="$PROJECT_DIR$/brands/templates/brand_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brands/templates/brand_update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brands/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/brands/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brands/templates/brand_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/brands/templates/brand_create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brands/templates/brand_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/brands/templates/brand_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brands/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/brands/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brands/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/brands/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +132,7 @@
       <workItem from="1738452957057" duration="4000000" />
       <workItem from="1738537033617" duration="4041000" />
       <workItem from="1738629569482" duration="3488000" />
-      <workItem from="1738715095601" duration="1753000" />
+      <workItem from="1738715095601" duration="2707000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial Django project setup&#10;&#10;This commit initializes a new Django project named &quot;DjangoSMS&quot; with default configurations, a core app, and PostgreSQL as the database backend. It also includes IDE settings, dependencies in `requirements.txt`, and basic project structure files like `manage.py`, `settings.py`, `urls.py`, and WSGI/ASGI configuration files.">
       <option name="closed" value="true" />
@@ -197,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738633106305</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add CRUD views and templates for Brand model&#10;&#10;Renamed the `name` field to `brand_name` in the Brand model for clarity and updated its ordering. Implemented ListView and CreateView with corresponding templates to enable basic CRUD functionality. Enhanced forms, updated URLs, and adjusted sidebar navigation for seamless integration.">
+      <option name="closed" value="true" />
+      <created>1738716879476</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738716879476</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +221,7 @@
     <MESSAGE value="Add templates for base layout with header, sidebar, and footer&#10;&#10;Introduced a base HTML structure with reusable components: header, sidebar, and footer. This setup ensures a consistent UI layout using Bootstrap and prepares the project for dynamic content rendering via Django." />
     <MESSAGE value="Rename Brand model field, add utils, and update templates.&#10;&#10;Renamed the `name` field to" />
     <MESSAGE value="Rename Brand model field and add CRUD views and templates.&#10;&#10;Renamed the `name` field to `brand_name` in the Brand model for clarity and adjusted its ordering. Introduced ListView and CreateView for the Brand model with corresponding templates (`brand_list.html` and `brand_create.html`) to enable basic CRUD functionality. Updated URLs, admin configuration, and sidebar navigation to integrate the new changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename Brand model field and add CRUD views and templates.&#10;&#10;Renamed the `name` field to `brand_name` in the Brand model for clarity and adjusted its ordering. Introduced ListView and CreateView for the Brand model with corresponding templates (`brand_list.html` and `brand_create.html`) to enable basic CRUD functionality. Updated URLs, admin configuration, and sidebar navigation to integrate the new changes." />
+    <MESSAGE value="Add CRUD views and templates for Brand model&#10;&#10;Renamed the `name` field to `brand_name` in the Brand model for clarity and updated its ordering. Implemented ListView and CreateView with corresponding templates to enable basic CRUD functionality. Enhanced forms, updated URLs, and adjusted sidebar navigation for seamless integration." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CRUD views and templates for Brand model&#10;&#10;Renamed the `name` field to `brand_name` in the Brand model for clarity and updated its ordering. Implemented ListView and CreateView with corresponding templates to enable basic CRUD functionality. Enhanced forms, updated URLs, and adjusted sidebar navigation for seamless integration." />
   </component>
 </project>
