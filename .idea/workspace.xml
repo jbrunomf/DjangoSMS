@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17102f50-a469-440a-9fa2-b6348367914c" name="Changes" comment="Refactor and enhance Brand model views and templates&#10;&#10;Updated `BrandUpdateView` and `BrandDetailView` to improve user interaction and CRUD functionality for the Brand model. Made UI enhancements, including updated buttons and card layouts in templates, and refined URL naming for consistency. These changes streamline navigation and ensure a better user experience.">
-      <change afterPath="$PROJECT_DIR$/brands/templates/brand_delete.html" afterDir="false" />
+    <list default="true" id="17102f50-a469-440a-9fa2-b6348367914c" name="Changes" comment="Add delete functionality for Brand model&#10;&#10;Introduced `BrandDeleteView` to enable deleting brands, along with a corresponding `brand_delete.html` template. Updated `brand_list.html` to include a delete button and enhanced navigation by adding the delete route in `urls.py`. These changes complete the CRUD operations for the Brand model.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/brands/templates/brand_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/brands/templates/brand_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brands/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/brands/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/brands/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/brands/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +131,7 @@
       <workItem from="1738537033617" duration="4041000" />
       <workItem from="1738629569482" duration="3488000" />
       <workItem from="1738715095601" duration="3417000" />
-      <workItem from="1738803449983" duration="1048000" />
+      <workItem from="1738803449983" duration="1400000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial Django project setup&#10;&#10;This commit initializes a new Django project named &quot;DjangoSMS&quot; with default configurations, a core app, and PostgreSQL as the database backend. It also includes IDE settings, dependencies in `requirements.txt`, and basic project structure files like `manage.py`, `settings.py`, `urls.py`, and WSGI/ASGI configuration files.">
       <option name="closed" value="true" />
@@ -231,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738804028180</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add delete functionality for Brand model&#10;&#10;Introduced `BrandDeleteView` to enable deleting brands, along with a corresponding `brand_delete.html` template. Updated `brand_list.html` to include a delete button and enhanced navigation by adding the delete route in `urls.py`. These changes complete the CRUD operations for the Brand model.">
+      <option name="closed" value="true" />
+      <created>1738804559096</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738804559096</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +267,7 @@
     <MESSAGE value="Add Update and Detail views for Brand model&#10;&#10;Implemented `BrandUpdateView` and `BrandDetailView` to enhance CRUD functionality for the Brand model. Added corresponding templates (`brand_update.html`, `brand_detail.html`) and updated the URLs to integrate the new views seamlessly. This ensures improved brand management and user interaction." />
     <MESSAGE value="Add Update and Detail views for Brand model&#10;&#10;Implemented `BrandUpdateView` and `BrandDetailView` to extend CRUD functionality for the Brand model. Added corresponding templates (`brand_update.html`, `brand_detail.html`) and enhanced the brand list view with action links for detail and update operations. Updated URLs to seamlessly integrate the new views, improving user interaction and brand management." />
     <MESSAGE value="Refactor and enhance Brand model views and templates&#10;&#10;Updated `BrandUpdateView` and `BrandDetailView` to improve user interaction and CRUD functionality for the Brand model. Made UI enhancements, including updated buttons and card layouts in templates, and refined URL naming for consistency. These changes streamline navigation and ensure a better user experience." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor and enhance Brand model views and templates&#10;&#10;Updated `BrandUpdateView` and `BrandDetailView` to improve user interaction and CRUD functionality for the Brand model. Made UI enhancements, including updated buttons and card layouts in templates, and refined URL naming for consistency. These changes streamline navigation and ensure a better user experience." />
+    <MESSAGE value="Add delete functionality for Brand model&#10;&#10;Introduced `BrandDeleteView` to enable deleting brands, along with a corresponding `brand_delete.html` template. Updated `brand_list.html` to include a delete button and enhanced navigation by adding the delete route in `urls.py`. These changes complete the CRUD operations for the Brand model." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add delete functionality for Brand model&#10;&#10;Introduced `BrandDeleteView` to enable deleting brands, along with a corresponding `brand_delete.html` template. Updated `brand_list.html` to include a delete button and enhanced navigation by adding the delete route in `urls.py`. These changes complete the CRUD operations for the Brand model." />
   </component>
 </project>
