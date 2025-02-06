@@ -43,6 +43,8 @@
                         <a href="{% url 'brand_detail' brand.id %}" class="btn btn-info"><i class="bi-eye"></i></a>
                         <a href="{% url 'brand_update' brand.id %}" class="btn btn-warning"><i
                                 class="bi bi-pencil"></i></a>
+                        <a href="{% url 'brand_delete' brand.id %}" class="btn btn-danger"><i
+                                class="bi bi-x"></i></a>
                     </td>
                 </tr>
             {% endfor %}

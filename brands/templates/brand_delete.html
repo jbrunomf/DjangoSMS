@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} Deletar Marca {{ brand.brand_name }} {% endblock %}
+
+
+{% block content %}
+    <div class="container mt-4">
+        <h3 class="display-6">Deseja remover {{ brand.brand_name }}</h3>
+
+        <div class="card">
+            <div class="card-body">
+                <p class="card-text">
+                    Tem certeza que deseja remover a marca {{ brand.brand_name }}?
+                </p>
+                <form action="{% url 'brand_delete' brand.id %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">Deletar</button>
+                    <a href="{% url 'brand_list' %}" class="btn btn-secondary">Cancelar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+

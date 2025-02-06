@@ -7,4 +7,5 @@ urlpatterns = [
     path('create/', views.BrandCreateView.as_view(), name='brand_create'),
     path('update/<int:pk>/', views.BrandUpdateView.as_view(), name='brand_update'),
     path('detail/<int:pk>/', views.BrandDetailView.as_view(), name='brand_detail'),
+    path('delete/<int:pk>/', views.BrandDeleteView.as_view(), name='brand_delete'),
 ]
